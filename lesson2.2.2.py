@@ -31,5 +31,4 @@ browser.quit()
 # input2.click()
 # input3 = browser.find_element_by_id("robotsRule")
 # input3.click()
-# input4 = browser.find_element_by_xpath("//button[text()='Submit']")
-# input4.click()
+
