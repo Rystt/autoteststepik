@@ -23,5 +23,5 @@ input2.send_keys(y)
 input4 = browser.find_element_by_xpath("//button[text()='Submit']")
 input4.click()
 
-time.sleep(10)
+time.sleep(1)
 browser.quit()
