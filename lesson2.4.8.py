@@ -17,7 +17,6 @@ button = WebDriverWait(browser, 12).until (
 button1 = browser.find_element_by_id("book")
 button1.click()
 
-browser.quit()
 
 x_element = browser.find_element_by_id("input_value")
 x = x_element.text
@@ -27,3 +26,6 @@ input1 = browser.find_element_by_id("answer")
 input1.send_keys(y)
 input4 = browser.find_element_by_xpath("//button[text()='Submit']")
 input4.click()
+
+
+browser.quit()
