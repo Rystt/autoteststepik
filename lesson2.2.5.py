@@ -23,5 +23,5 @@ input3.click()
 input4 = browser.find_element_by_xpath("//button[text()='Submit']")
 input4.click()
 
-time.sleep(10)
-browser.quit()
+time.sleep(10) #задержка на 10 секунд
+browser.quit() #закрываем браузер
