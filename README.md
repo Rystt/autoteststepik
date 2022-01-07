@@ -1,4 +1,2 @@
-# autoteststepik
-ДЗ к курсу на Stepik
-https://stepik.org/lesson/187065/step/7?unit=161976
+Финальное задание на курсе Stepik "Автоматизация тестирования с помощью Selenium и Python"
 
