@@ -1,6 +1,7 @@
 from selenium import webdriver
 import pytest
 from selenium.webdriver.chrome.options import Options
+import time
 #
 #
 def pytest_addoption(parser):
