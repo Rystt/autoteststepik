@@ -6,6 +6,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import math
 from .locators import BasePageLocators
+from .locators import BaseCap
+
 
 class BasePage():
     def __init__(self, browser, url):
@@ -64,3 +66,11 @@ class BasePage():
 
     def should_be_login_link(self):
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), "Login link is not presented"
+
+    def transition_in_cap(self):
+        cap = self.browser.find_element(*BaseCap.BASKET_LINK)
+        cap.click(), "Не нажалась кнопка перехода в корзину"
+
+
+
+
