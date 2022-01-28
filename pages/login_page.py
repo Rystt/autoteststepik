@@ -22,12 +22,6 @@ class LoginPage(BasePage):
     def should_be_register_form(self):
         assert self.is_element_present(*LoginPageLocators.REGISTER_FORM), "Не нашли форму регистрации"
 
-    def go_to_login_page(self):
-        link = self.browser.find_element_by_css_selector("#login_link")
-        link.click()
-        alert = self.browser.switch_to.alert
-        alert.accept()
-
     def register_new_user(self, email, password):
         login = self.browser.find_element(*LoginPageLocators.EMAIL_ADRESS_FIELD)
         login.send_keys(email)
