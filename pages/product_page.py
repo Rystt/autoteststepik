@@ -6,7 +6,7 @@ class Product_Page(BasePage):
     def add_product(self):
         product_add = self.browser.find_element(*ProductPageLocators.INPUT_ADD_TO_SHOPPING_CART)
         product_add.click()
-    #
+
     def checking_for_message_product(self):
         a = (self.browser.find_element(*ProductPageLocators.INPUT_PRODUCT)).text
         b = (self.browser.find_element(*ProductPageLocators.MASSEGE_OF_PRODUCT)).text
